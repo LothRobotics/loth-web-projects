@@ -1,0 +1,117 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-top: 0.5em;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.start-section__content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: rgba(38, 44, 60, 0.8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    flex-grow: 0.1;
+}
+
+.start-section-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.start-section-title{
+    margin-left: 0.7em;
+}
+
+.start-section-box{
+    margin: 10px;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.start-section-button{
+    margin-right: 20px;
+    font-weight: 600;
+    border-radius: 1em;
+}
+
+.house-section-wrapper{
+    flex-grow: 1;
+    display: flex;
+    background-color: rgba(38, 44, 60, 0.8);
+}
+
+.house-section{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    flex-grow: 1;
+    align-content: flex-start;
+    justify-content: center;
+    margin-left: 3em;
+    max-width: 35vw;
+    word-break: break-word;
+}
+
+.house-section-title{
+    font-size: 2em;
+    letter-spacing: -0.04em;
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    line-height: 50px;
+    /* For some reason there is a big difference between 0.99 em and 1 em, weird bug, I have to use pixels to get what I want*/
+}
+
+.house-section-text{
+    font-size: 0.7em;
+    letter-spacing: 0.01em;
+}
+
+.house-section-button-wrapper{
+    
+    font-size: smaller;
+    border-radius: 0.5em;
+    color: #ffffff;
+    font-weight: 600;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background-color: rgb(30, 86, 216);
+    text-decoration: none;
+}
+
+.house-section-button-spacing{
+    height: 1em;
+    width: 0px;
+}
+
+.contact-section{
+    background-color: rgba(38, 44, 60, 0.8);
+}
+

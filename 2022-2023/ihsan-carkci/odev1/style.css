@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content:center;
+}
+
+.button_container{
+    display: flex;
+    align-content: center;
+}
+
+a{ /*Abi şaka gibi butona basınca yeni sekme açamıyorsun kafayı yersin*/
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+}
+
+button{
+    border-style: hidden;
+    text-align: center;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ef476f;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+p{
+    color: antiquewhite;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 0.1em;
+    margin-right: 1em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: transparent
+}
+
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    min-height: 120px;
+}
+
+.item{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    background-color:#ef476f;
+}
+
+.text-rainbow-animation {
+    display: flex;
+    justify-content: center;
+    font-size:50px;
+    font-weight: 1000;
+    background-image: 
+      linear-gradient(to right, #ef476f,#ffd166,#06d6a0,#118ab2,#07164d); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 45s linear infinite;
+  }
+  @keyframes rainbow-animation {
+      to {
+          background-position: 1000vh;
+      }
+  }
+
+
