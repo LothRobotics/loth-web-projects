@@ -1,0 +1,5 @@
+vw, vh, %, px, em, rem
+% parent container'ın boyutunu kullanarak boyutlandırma yapıyor
+em font size'ına bağlı ama kendi parent'ına bağlı
+rem de font size'a bağlı ama root'taki font size a bağlı
+bir de flexbox kullanmam lazım

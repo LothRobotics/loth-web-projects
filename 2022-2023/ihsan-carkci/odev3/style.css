@@ -1,0 +1,200 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/start.png");
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position: 0 120%;
+    font-size: 24px;
+}
+#link{
+    font-size: 0.8em;
+    color: #111111;
+    transition: 0.4s;
+}
+#link:hover{
+    color: orange;
+    transition: 0.4s;
+}
+/*
+I just noticed this instead of just using :hover for classes I can use id and use it like that,
+then for the Berker Okan at the header, I can just choose the nth-child() to change it
+*/ 
+.start-section__wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 1%;
+    background-color: #fff7ede5;
+    
+}
+.start-section__links-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+.start-section__links, .start-section__title{
+    color: #111111;
+    margin-left: 1em;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.start-section__links:hover, .start-section__title:hover{
+    color: orange;
+    transition: 0.4s;
+    padding-right: 0.3em;
+}
+.start-section__title{
+    font-size: 1.4em;
+}
+.start-section__title:hover{
+    transform: scaleY(1.1) scaleX(1.1);
+}
+.intro-section-container{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#fff7ede5, #ffe6c6e5);
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+.intro-section__wrapper{
+    display: flex;
+    padding: 8em 7em;
+    justify-content: space-between;
+    position: relative;
+}
+.intro-section-img-wrapper{
+    position: relative;
+    min-width: 25vw;
+}
+.intro-section-intro-wrapper{
+    max-width: 40vw;
+}
+#intro-img{
+    left: 1em;
+    position: absolute;
+    width:7em;
+    height:7em;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+#intro-img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#intro-img:nth-child(1){
+    top: -1em;
+    left: 1em;
+    z-index: 2;
+}
+#intro-img:nth-child(2){
+    top: 2em;
+    left: 3em;
+    width: 8em;
+    height: 8em;
+    z-index: 1;
+}
+#intro-img:nth-child(3){
+    top: -2em;
+    left: 6em;
+    z-index: 0;
+}
+.intro-section__title{
+    font-size: 1.8em;
+    line-height: 0.9em;
+    font-weight: 700;
+    color: #111111;
+}
+.intro-section__title2{
+    font-size: 0.6em;
+    color: #aaaaaa;
+}
+.intro-section__content{
+    font-size: 0.9em;
+}
+.intro-section-godown-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#button{
+    background-color: #CF711F;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.5em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#button:hover{
+    background-color: #d87c2a;
+    font-size: large;
+    transition: 0.5s;
+}
+.about-section__wrapper{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 4em;
+    background-color: white;
+}
+#about-img{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+#about-img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.about-section-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 45vw;
+}
+.about-section__title{
+    color:#CF711F;
+}
+.about-section__h1{
+    font-size: 2em;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+.about-section__content{color:#494949;}
+.gallery-section__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    background-color: white;
+}
+.gallery-section-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-section__title{color:#CF711F;}
+.gallery-section__h1{margin:0;}
