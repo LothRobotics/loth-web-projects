@@ -11,10 +11,6 @@ body{
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-image: url("img/start.png");
-    background-repeat: no-repeat;
-    background-size: 110vw;
-    background-position: 0 120%;
     font-size: 24px;
 }
 #link{
@@ -26,10 +22,7 @@ body{
     color: orange;
     transition: 0.4s;
 }
-/*
-I just noticed this instead of just using :hover for classes I can use id and use it like that,
-then for the Berker Okan at the header, I can just choose the nth-child() to change it
-*/ 
+a{text-decoration: none; color: #111111;}
 .start-section__wrapper{
     display:flex;
     flex-direction: row;
@@ -66,10 +59,10 @@ then for the Berker Okan at the header, I can just choose the nth-child() to cha
 .intro-section-container{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#fff7ede5, #ffe6c6e5);
     justify-content: space-between;
     position: relative;
     align-items: center;
+    background-image: linear-gradient(#fff7ede5, #ffe6c6e5);
 }
 .intro-section__wrapper{
     display: flex;
@@ -132,7 +125,7 @@ then for the Berker Okan at the header, I can just choose the nth-child() to cha
     align-items: center;
 }
 #button{
-    background-color: #CF711F;
+    background-color: #d77a28;
     border-radius: 0.4em;
     color: white;
     padding: 0.5em 0.7em;
@@ -145,8 +138,7 @@ then for the Berker Okan at the header, I can just choose the nth-child() to cha
     transition: 0.5s;
 }
 #button:hover{
-    background-color: #d87c2a;
-    font-size: large;
+    background-color: #e38c3f;
     transition: 0.5s;
 }
 .about-section__wrapper{
@@ -198,3 +190,66 @@ then for the Berker Okan at the header, I can just choose the nth-child() to cha
 }
 .gallery-section__title{color:#CF711F;}
 .gallery-section__h1{margin:0;}
+#gallery-img{
+    width: 15vw;
+    height: 15vw;
+    transition: 0.3s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+#gallery-img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    aspect-ratio: 1/1;
+    z-index: 10;
+}
+.gallery-section-gallery-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.gallery-section-gallery-wrapper__content{
+    display: flex;
+    flex-direction: column;
+}
+#gallery-access{font-size:0.8em;color:#111111; transition: 0.4s;}
+#gallery-access:hover{color:orange; transition: 0.4s;}
+.signup-section__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    background-color: rgba(255, 244, 230, 0.875);
+}
+.footer-section__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4em;
+    background-color: white;
+}
+.signup-section__button-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.footer-section__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:4vh;
+}
+#gr{
+    color: #666666;
+    font-size:0.8em;
+}
+#gr2{
+    color: #666666;
+    font-size:0.8em;
+    transition: 0.5s;
+}
+#gr2:hover{
+    color: #CF711F;
+    transition: 0.5s;
+}

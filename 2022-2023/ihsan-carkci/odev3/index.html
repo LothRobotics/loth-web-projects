@@ -16,35 +16,36 @@
             <a id="link" href="#about" class="start-section__links">Hakkımda</a>
             <a id="link" href="#" class="start-section__links">Çalışmalarım</a>
             <a id="link" style="margin-right: 0.6em;" href="#gallery" class="start-section__links">Galeri</a>
-            <a id="button" href="https://justhink.net/" class="start-section__links">Giriş Yap</a>
+            <a id="button" href="#signup" class="start-section__links">Giriş Yap</a>
         </nav>
     </header>
     
     <main>
-        <section id="intro" class="intro-section-container" >
-            <div class="intro-section__wrapper">
-                <div class="intro-section-intro-wrapper">
-                    <div class="intro-section__title"><b>Berker Okan</b></div>
-                    <div class="intro-section__title2">Yazar & Öğretmen</div>
-                    <div class="intro-section__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                    <div class="intro-section__button-wrapper">
-                        <a id="button" href="https://notenlish.github.io/" class="intro-section__button">İletişime Geç</a>
+        <section style="background-image: url(img/start.png); background-size: 100%;background-position: center center;">
+            <div id="intro" class="intro-section-container" >
+                <div class="intro-section__wrapper">
+                    <div class="intro-section-intro-wrapper">
+                        <div class="intro-section__title"><b>Berker Okan</b></div>
+                        <div class="intro-section__title2">Yazar & Öğretmen</div>
+                        <div class="intro-section__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+                        <div class="intro-section__button-wrapper">
+                            <a id="button" href="https://notenlish.github.io/" class="intro-section__button">İletişime Geç</a>
+                        </div>
+                    </div>
+                    <div class="intro-section-img-wrapper">
+                        <img id="intro-img" src="img/trio1.jpg" alt="fotoğraf-1">
+                        <img id="intro-img" src="img/trio2.png" alt="fotoğraf-2">
+                        <img id="intro-img" src="img/trio3.jpg" alt="fotoğraf-1">
                     </div>
                 </div>
-                <div class="intro-section-img-wrapper">
-                    <img id="intro-img" src="img/trio1.jpg" alt="fotoğraf-1">
-                    <img id="intro-img" src="img/trio2.png" alt="fotoğraf-2">
-                    <img id="intro-img" src="img/trio3.jpg" alt="fotoğraf-1">
+                <div class="intro-section-godown-wrapper">
+                    <a>bilgilenmeye başlamak için kaydır!</a>
+                    <span class="material-icons">
+                        expand_more
+                    </span>
                 </div>
             </div>
-            <div class="intro-section-godown-wrapper">
-                <a>bilgilenmeye başlamak için kaydır!</a>
-                <span class="material-icons">
-                    expand_more
-                </span>
-            </div>
         </section>
-
         <section id="about" class="about-section__wrapper">
             <div>
                 <img id="about-img" src="img/img2.jpg" alt="fotoğrafım">
@@ -57,38 +58,79 @@
                 </div>
             </div>
         </section>
-
         <section id="gallery" class="gallery-section__wrapper">
             <div class="gallery-section-text-wrapper">
                 <div class="gallery-section__title">Galeri</div>
                 <h1 class="gallery-section__h1">Geçmiş Anıları Tazelemeye Başla</h1>
             </div>
             <div class="gallery-section-gallery-wrapper">
-                <div class="gallery-section-gallery-wrapper__content"></div>
-                <div class="gallery-section-gallery-wrapper__content"></div>
-                <div class="gallery-section-gallery-wrapper__content"></div>
-                <div class="gallery-section-gallery-wrapper__content"></div>
-                <div class="gallery-section-gallery-wrapper__content"></div>
+                <div class="gallery-section-gallery-wrapper__content">
+                    <img id="gallery-img" src="img/memory1.jpg" alt="galeri-fotoğraf-1">
+                    <img id="gallery-img" src="img/memory1.jpg" alt="galeri-fotoğraf-1">
+                    <img id="gallery-img" src="img/memory1.jpg" alt="galeri-fotoğraf-1">
+                </div>
+                <div class="gallery-section-gallery-wrapper__content">
+                    <img id="gallery-img" src="img/memory2.jpg" alt="galeri-fotoğraf-2">
+                    <img id="gallery-img" src="img/memory2.jpg" alt="galeri-fotoğraf-2">
+                    <img id="gallery-img" src="img/memory2.jpg" alt="galeri-fotoğraf-2">
+                </div>
+                <div class="gallery-section-gallery-wrapper__content">
+                    <img id="gallery-img" src="img/memory3.jpg" alt="galeri-fotoğraf-3">
+                    <img id="gallery-img" src="img/memory3.jpg" alt="galeri-fotoğraf-3">
+                    <img id="gallery-img" src="img/memory3.jpg" alt="galeri-fotoğraf-3">
+                </div>
+                <div class="gallery-section-gallery-wrapper__content">
+                    <img id="gallery-img" src="img/memory4.jpg" alt="galeri-fotoğraf-4">
+                    <img id="gallery-img" src="img/memory4.jpg" alt="galeri-fotoğraf-4">
+                    <img id="gallery-img" src="img/memory4.jpg" alt="galeri-fotoğraf-4">
+                </div>
+                <div class="gallery-section-gallery-wrapper__content">
+                    <img id="gallery-img" src="img/memory5.jpg" alt="galeri-fotoğraf-5">
+                    <img id="gallery-img" src="img/memory5.jpg" alt="galeri-fotoğraf-5">
+                    <img id="gallery-img" src="img/memory5.jpg" alt="galeri-fotoğraf-5">
+                </div>
             </div>
+            <a id="gallery-access" href="#gallery" >Bütün galeri içeriğine ulaşmak için tıklayın.</a>
         </section>
-
-        <section id="signup" class="signup-section__wrapper">
-            <div class="signup-section__h1">berkerokan.com.tr'ye Şimdi Kaydol!</div>
-            <div class="signup-section__content">
-                Yaratıcılığını, kendini bulabileceğin; Podcast, blog, deneme, hikaye paylaşımlarının olduğu platforma şimdi başla!
-            </div>
-            <div class="signup-section__button-wrapper">
-                <a id="button" href="https://notenlish.github.io/" class="signup-section__button__link">Kaydol</a>
-                <a href="https://notenlish.github.io/">Giriş Yap</a>
+        <section id="signup" style="background-image: url(img/signup.jpg); background-repeat: no-repeat; background-position: center; background-size: 100vw;">
+            <div class="signup-section__wrapper">
+                <div style="font-size:1.2em;"class="signup-section__h1"><b>berkerokan.com.tr'ye Şimdi Kaydol!</b></div>
+                <div style="max-width:60vw; text-align: center; font-size: 0.9em;color:#555555;" class="signup-section__content">
+                    Yaratıcılığını, kendini bulabileceğin; Podcast, blog, deneme, hikaye paylaşımlarının olduğu platforma şimdi başla!
+                </div>
+                <div class="signup-section__button-wrapper" style="align-items: center;">
+                    <a style="margin-right:5vw;" id="button" href="https://notenlish.github.io/">Kaydol</a>
+                    <a href="https://notenlish.github.io/">Giriş Yap</a>
+                </div>
             </div>
         </section>
 
         <section id="footer" class="footer-section__wrapper">
-            <div class="footer-section__title">Berker Okan</div>
-            <div class="footer-section__content">Yazar & Öğretmen</div>
-            <div class="footer-section__content">Lorem ipsum dolor amet</div>
-            <div class="footer-section__button-wrapper">
-                <a id="button" href="https://notenlish.github.io/" class="footer-section__button">İletişime Geç</a>
+            <div class="footer-section__content"><b>Berker Okan</b>
+                <a id="gr" style="max-width: 35vw;">Yaratıcılığını, kendini bulabileceğin; Podcast, blog, deneme, hikaye paylaşımlarının olduğu bir platform!</a>
+                <a href="https://www.youtube.com/@furkanesen" id="gr2">Twitter</a>
+                <a href="https://www.youtube.com/@furkanesen" id="gr2">Youtube</a>
+                <a href="https://www.youtube.com/@furkanesen" id="gr2">Instagram</a>
+                <a id="gr">Copyright 2022 by Berker Okan. Tüm hakları saklıdır.</a>
+            </div>
+            <div class="footer-section__content">Faydalı Linkler
+                <a href="#about" id="gr2">Hakkımda</a>
+                <a href="#gallery" id="gr2">Galeri</a>
+                <a href="#signup" id="gr2">Şimdi Kaydol</a>
+            </div>
+            <div class="footer-section__content">Hesap
+                <a href="#signup" id="gr2">Şimdi Kaydol</a>
+                <a href="#signup" id="gr2">Giriş Yap</a>
+            </div>
+            <div class="footer-section__content">Çalışmalarım
+                <a id="gr">Podcastler</a>
+                <a id="gr">Denemeler</a>
+                <a id="gr">Hikayeler</a>
+                <a id="gr">Kitap Eleştirileri</a>
+            </div>
+            <div class="footer-section__content">Legal
+                <a id="gr">Gizlilik Politikası</a>
+                <a id="gr">Kullanım Şartları</a>
             </div>
         </section>
     </main>
