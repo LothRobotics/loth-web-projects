@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  font-family: "Inter";
+}
+
+body {
+  /* background: #222a35;
+  opacity: 0.75; */
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 42, 53, 0.75),
+      rgba(34, 42, 53, 0.75)
+    ),
+    url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.astral {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.astral strong {
+  font-weight: 700;
+}
+
+.link {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 18px 16px;
+  border-radius: 11px;
+}
+
+#special {
+  font-weight: 600;
+  border-radius: 11px;
+  padding: 18px 43px;
+  margin-left: 16px;
+}
+
+.main-text #special {
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text-1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.text-2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* FLEXBOX */
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  padding: 0 32px;
+  padding-top: 36px;
+
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+.container {
+  /* Soldaki boşluk için */
+  margin-left: 55px;
+}
+
+/* Animations */
+
+.link-animation {
+  background: linear-gradient(rgba(190, 208, 233, 0.35) 0 0) no-repeat;
+  background-size: 0%;
+  transition: 0.8s;
+}
+
+.link-animation:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
+
+.link-animation:active {
+  background: linear-gradient(
+    rgba(190, 208, 233, 0.5),
+    rgba(190, 208, 233, 0.5)
+  );
+}
+
+#special {
+  background-color: rgb(0, 0, 200);
+  background-size: 100%;
+  font-size: 28px;
+  transition: 0.7s;
+}
+
+#special:hover {
+  background-color: rgb(0, 0, 200);
+  font-size: 32px;
+  transition: 0.8s;
+}
+
+#special:active {
+  background-color: rgb(200, 73, 0);
+  transition: 0.2s;
+}
+
+.astral {
+  transition: 1s;
+}
+
+.astral:hover {
+  cursor: pointer;
+  font-size: 40px;
+  transition: 1s;
+}
+
+.text-1 strong {
+  transition: 1s;
+}
+
+.text-1 strong:hover {
+  font-size: 80px;
+  transition: 1s;
+}
