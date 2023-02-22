@@ -29,7 +29,7 @@ a{text-decoration: none; color: #111111;}
     justify-content: space-between;
     align-items: center;
     padding: 0.4em 1%;
-    background-color: #fff7ede5;
+    background-color: #fff6ea;
     
 }
 .start-section__links-wrapper{
@@ -62,8 +62,16 @@ a{text-decoration: none; color: #111111;}
     justify-content: space-between;
     position: relative;
     align-items: center;
-    background-image: linear-gradient(#fff7ede5, #ffe6c6e5);
+    background-image: linear-gradient(#fff6ea, #ffe6c6e5);
 }
+.intro-section-bcontainer{
+    background-image: url(img/start.avif);
+    background-size: 100%;
+    background-position: center center;
+}
+/*gap önemli vw vh yerine min-height    
+ayrıca bir sürü farklı meta farklı bilgi verme şeysi 3ten fazla
+*/
 .intro-section__wrapper{
     display: flex;
     padding: 8em 7em;
@@ -84,6 +92,7 @@ a{text-decoration: none; color: #111111;}
     height:7em;
     border-radius: 100%;
     transition: 0.3s;
+    object-fit: cover;
 }
 #intro-img:hover{
     transform: scale(1.1);
@@ -177,9 +186,9 @@ a{text-decoration: none; color: #111111;}
 .gallery-section__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 4em;
+    padding: 4em 4em 4em 4em;
     background-color: white;
 }
 .gallery-section-text-wrapper{
@@ -194,14 +203,14 @@ a{text-decoration: none; color: #111111;}
     width: 15vw;
     height: 15vw;
     transition: 0.3s;
-    aspect-ratio: 1/1;
     object-fit: cover;
+    border-radius: 0;
 }
 #gallery-img:hover{
     transform: scale(1.1);
     transition: 0.3s;
-    aspect-ratio: 1/1;
     z-index: 10;
+    border-radius: 0.5em;
 }
 .gallery-section-gallery-wrapper{
     display: flex;
@@ -221,6 +230,9 @@ a{text-decoration: none; color: #111111;}
     padding: 4em;
     background-color: rgba(255, 244, 230, 0.875);
 }
+.signup-section__h1{
+    font-size:1.2em;
+}
 .footer-section__wrapper{
     display: flex;
     justify-content: space-evenly;
@@ -236,8 +248,9 @@ a{text-decoration: none; color: #111111;}
 .footer-section__content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+    flex-grow: 1;
     margin-bottom:4vh;
 }
 #gr{
@@ -252,4 +265,10 @@ a{text-decoration: none; color: #111111;}
 #gr2:hover{
     color: #CF711F;
     transition: 0.5s;
+}
+#signup{
+    background-image: url(img/signup.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
 }
