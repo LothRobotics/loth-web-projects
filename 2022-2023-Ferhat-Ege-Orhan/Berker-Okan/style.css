@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+.container {
+  height: 100vh;
+
+  /* background: url(https://www.siani.se/wp-content/uploads/2021/07/chris-spiegl-CSJPm2POibQ-unsplash.jpeg);
+  background: rgba(255, 244, 230, 0.9); */
+
+  background-image: linear-gradient(
+      rgba(255, 244, 230, 0.9),
+      rgba(255, 244, 230, 0.9)
+    ),
+    url(https://www.siani.se/wp-content/uploads/2021/07/chris-spiegl-CSJPm2POibQ-unsplash.jpeg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* HEADER */
+
+h1 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+h1 strong {
+  font-weight: 600;
+}
+
+.header-links {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.header-special {
+  padding: 1.2rem 1.2rem;
+  color: #fff;
+  background-color: #cf711f;
+  border-radius: 0.9rem;
+}
+
+/* INTRODUCTION */
+
+.introduction-title {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.introduction-me {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 50%;
+  margin-bottom: 2rem;
+}
+
+.introduction-text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.introduction-button {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  background-color: #cf711f;
+  color: white;
+  border-radius: 0.9rem;
+}
+
+/* ABOUT ME */
+
+.about-me-title {
+  font-size: 1.6rem;
+  color: #cf711f;
+  margin-bottom: 0.5rem;
+}
+
+.about-me-text-title {
+  font-weight: 700;
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.about-me-text-1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 3.2rem;
+}
+
+.about-me-text-2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+/* GALERY */
+
+.row-1 img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.galery-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #cf711f;
+}
+
+.galery-text {
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #222;
+}
+
+.photos {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+/* CTA */
+
+.cta-link {
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.cta-text {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.cta-login {
+  padding: 1rem 2rem;
+
+  background-color: #cf711f;
+  color: #fff;
+  border-radius: 0.9rem;
+}
+
+.cta-sign-in {
+  padding: 1rem 2rem;
+}
+
+/* FOOTER LEFT */
+
+.berker {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.berker strong {
+  font-weight: 600;
+}
+
+.berker-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #767676;
+  /* En sağdaki elementte sahip ama bir şey bozmuyor yani evet */
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #767676;
+}
+
+/* FOOTER Right */
+
+.group-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+
+  margin-bottom: 3.5rem;
+}
+
+.group-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #767676;
+  margin-bottom: 1.8rem;
+}
+
+.group-text-last {
+  margin-bottom: 0;
+}
+
+/* FLEXBOX */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.row-1 {
+  display: flex;
+}
+
+.cta nav {
+  display: flex;
+  gap: 3rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.groups {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+/* Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 4.8rem 1fr 1.7rem 2rem;
+  padding: 1.5rem 3.5rem;
+}
+
+header {
+  grid-column: 1 / 13;
+}
+
+.introduction {
+  grid-column: 1 / 13;
+  justify-self: center;
+}
+
+.bottom-text {
+  grid-column: 1 / 13;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.bottom-icon {
+  grid-column: 1 / 13;
+  justify-self: center;
+}
+
+.galery {
+  display: grid;
+  grid-template-rows: 1.9rem 5.3rem 1fr 1.9rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 12rem;
+}
+
+.cta {
+  padding: 5.5rem 0;
+  background-image: linear-gradient(
+      rgba(255, 244, 230, 0.9),
+      rgba(255, 244, 230, 0.9)
+    ),
+    url(https://autonomy.work/wp-content/uploads/2021/04/firmbee-com-SpVHcbuKi6E-unsplash.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-auto-rows: auto;
+  align-items: center;
+  justify-items: center;
+
+  margin-bottom: 15rem;
+}
+
+/* ANIMATIONS */
+
+.header-link:hover {
+  color: #d36301;
+  transition: 0.2s;
+}
+
+.header-special:hover,
+.introduction-button:hover,
+.cta-login:hover {
+  background-color: #e07b21;
+  transition: 0.2s;
+}
+
+.cta-sign-in:hover {
+  background-color: rgba(224, 122, 33, 0.541);
+  border-radius: 0.9rem;
+  transition: 0.2s;
+}
+
+.group-text:hover {
+  color: #111;
+}
+
+/* Sil */
+/* header {
+  background-color: red;
+}
+
+.introduction {
+  background-color: green;
+}
+
+.bottom-text {
+  background-color: blue;
+} */
